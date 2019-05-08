@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.UIController">
+   <children>
+      <ComboBox fx:id="classifierDropDown" layoutX="178.0" layoutY="35.0" prefWidth="150.0" />
+      <AnchorPane fx:id="imagePane" layoutX="10.0" layoutY="64.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="336.0" fitWidth="486.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="nextImage" layoutX="103.0" layoutY="35.0" mnemonicParsing="false" onAction="#nextImage" prefHeight="25.0" prefWidth="61.0" text="Next" />
+      <Button fx:id="previousImage" layoutX="30.0" layoutY="35.0" mnemonicParsing="false" onAction="#previousImage" text="Previous" />
+      <Button layoutX="103.0" layoutY="2.0" mnemonicParsing="false" onAction="#markImages" text="MarkImages" />
+      <Button layoutX="29.0" layoutY="2.0" mnemonicParsing="false" onAction="#runTests" text="RunTests" />
+      <Text fx:id="boundingText" layoutX="338.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Bounding Designated" wrappingWidth="157.13671875" />
+      <Button layoutX="201.0" layoutY="2.0" mnemonicParsing="false" onAction="#createJson" text="CreateJson" />
+      <Button fx:id="detect" layoutX="294.0" layoutY="2.0" mnemonicParsing="false" onAction="#detect" text="Detect Bounding using NN" />
+   </children>
+</AnchorPane>
